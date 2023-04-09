@@ -1,0 +1,27 @@
+<div class="main-section">
+<div class="row">
+    <div class="col-lg-6 col-sm-12 left-side">
+        <div class="title">
+            <h1>Log In</h1>
+            <h5>Login with correct cradentials.</h5>
+        </div>
+    </div>
+    <div class="col-lg-6 col-sm-12 right-side">
+        <div class="login-section">
+            <h1>Login</h1>
+            <form [formGroup]="formData" (ngSubmit)="onSubmit()">
+            <div  class="input-group input-group-sm mb-3">
+                <input type="text" maxlength="6" (ngModelChange)="getErrorMessage()" placeholder="User ID" formControlName="username" class="form-control">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <input type="password" maxlength="4" (ngModelChange)="getErrorMessage()" placeholder="Passcode" formControlName="passcode" class="form-control">
+            </div>
+            <!-- <span>{{errorMessage?.errors}}</span> -->
+            <div *ngIf="errorMessage" class="error-message">User ID and passcode is wrong !</div>
+
+             <button class="btn btn-primary" type="submit" >Login</button>
+            </form>
+        </div>
+    </div>
+</div>
+</div>

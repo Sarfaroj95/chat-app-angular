@@ -1,0 +1,8 @@
+<div class="p-3 message-list" #scroll>
+    <p *ngFor="let message of messages" 
+        [ngClass]="{'left-message': message.user == 'Roni', 'right-message': message.user != 'Roni'}">
+        <span class="text" [ngClass]="{'bg-primary': message.user != 'Roni', 'bg-success': message.user == 'Roni'}">{{message.text}}</span>
+        <br/>
+        <span class="date-time">{{message.createdAt | date : 'medium'}}</span>
+    </p>
+</div>

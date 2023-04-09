@@ -1,0 +1,48 @@
+
+.messages{
+    border: 1px solid brown;
+    border-radius: 4px 0px 0px 4px;
+    padding: 2px;
+    background-color: gray;
+}
+.text{
+    // max-width: 100px;
+    font-size: 12px;
+    max-width: initial;
+    color: #fff;
+    padding: 2px 6px 3px;
+}
+
+.bg-primary{
+    border-radius: 7px 7px 0px 7px;
+    background-color: #EE4266 !important;
+}
+
+.bg-success{
+    border-radius: 6px 7px 6px 0px;
+    background-color: #2A1E5C !important;
+   
+}
+.badge{
+    font-size: 12px;
+    font-weight: 400;
+    max-width: initial;
+}
+.left-message{
+    text-align: left;
+}
+.right-message{
+    text-align: right;
+}
+.message-list{
+    // background-color: lightblue;
+    height: 82vh;
+    width: 100%;  
+    overflow-y: auto;
+}
+
+.date-time{
+    font-size: 10px;
+    color: gray;
+    padding-top: -20px;
+}

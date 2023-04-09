@@ -1,0 +1,22 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.chat-body{
+    height: 100vh;
+    
+}
+
+.btn-success{
+    background-color: #2A1E5C !important;
+}
+
+
+
+        @media only screen and (min-width: 360px) and (max-width: 768px) {
+            /* For mobile phones: */
+            .left-side-mobile {
+                display: none;
+            }
+        }

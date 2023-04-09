@@ -1,0 +1,40 @@
+<section>
+    <div class="row ">
+        <!-- left side -->
+        <div class="col-lg-3 col-sm-12 left-side-mobile">
+            <app-left-side></app-left-side>
+        </div>
+        <!-- right side -->
+        <div class="col-lg-9 col-sm-12">
+            <div class="chat-body">
+                <div>  
+                    <app-chat-header></app-chat-header>
+                    <app-chat-messages [messages]="messages"></app-chat-messages>
+                </div> 
+                <div class="footer p-2 pt-3">
+                    <form [formGroup]="formData" (ngSubmit)="onSubmit()" >
+                    <div class="input-group input-group-sm">
+                        <!-- <p style="font-size:24px">
+                            &#128151;
+                            </p> -->
+                        <span class="input-group-text" (click)="getMessage()"><i class="bi bi-activity"></i></span>
+                        <!-- <emoji-mart set="apple"></emoji-mart> -->
+                            <input id="myText" placeholder="Type message" type="text" formControlName="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                            <button class="btn btn-success" [disabled]="!formData.valid"  type="submit"><span><i class="bi bi-send"></i></span>
+                            </button>    
+                      </div>
+                    </form>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    
+</section>
+
+<script type="text/javascript">
+    $('myText').emojionText({
+        pickerPosition: 'right'
+    })
+
+</script>

@@ -1,0 +1,26 @@
+.header{
+  background-color: #EE4266;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+    padding: 16px 10px 16px;
+    color: #fff;
+}
+.user-log{
+  height: 28px;
+  width: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2A1E5C;
+  margin-right: 6px;
+  border-radius: 50px;
+  p{
+    font-size: 18px;
+    padding-top: 15px;
+    color: #fff;
+  }
+
+
+}
