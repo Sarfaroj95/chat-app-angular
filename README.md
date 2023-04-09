@@ -1,6 +1,6 @@
 ### Angular Chat Application.
 
-** Run Program **
+**Run Program**
 
 ```
     1. npm install
